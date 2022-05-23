@@ -85,5 +85,8 @@ const seed = async function () {
 };
 
 seed()
-    .then(data => console.log(data))
+    .then(data => {
+        console.log(data);
+        process.exit(0)
+    })
     .catch(error => console.error(error));
